@@ -1,0 +1,278 @@
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: beige;
+    color: #FCD34D;
+} 
+.container{
+    margin: auto;
+    background-color: rgb(0, 0, 0);
+    padding: 0;
+    width: 400px;
+    box-shadow: 0 0 9px rgb(86, 85, 85);
+
+}
+header{
+    background-image: url('images/bikes_bunner.jpg');
+    background-size: 400px 115px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 110px;
+    box-sizing: border-box;
+    text-shadow: 0 0 5px black;
+    font-weight: 800;
+}
+main{
+    margin-top: 20px;
+    box-sizing: border-box;
+    /*overflow-y: auto;/*make height content dependent*/
+}
+
+.card{
+    display: flex;
+    padding-top: 30px;
+    margin-right: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #FCD34D;
+    /* background-color: beige; */
+}
+.shopping-items{
+    padding-left: 30px;
+}
+h1{
+    margin-left: 30px;
+    padding-top: 47px;
+    margin-bottom: 0;
+    font-weight: 900;
+    font-size: 20px;
+}
+p{
+    margin-left: 30px;
+    font-size: 10px;
+    margin-top: 5px;
+    
+}
+.bike-photo{
+    width: 60px;
+    height: 50px;
+}
+.card-center{
+    margin-right: auto;
+    margin-left: 10%;
+    text-align: left;
+    width: 55%;
+}
+h2{
+    margin: 0;
+    font-size: 10px;
+}
+h3{
+    margin-top: 0;
+    font-size: 10px;
+}
+.spec{
+    margin:0;
+    color: grey;
+}
+.card-right{
+    margin-left: auto;
+    border-radius: 60%;
+    border: 1px solid #FCD34D;
+    width: 30px;
+    height: 30px;
+}
+i{
+    position: relative;
+    margin: auto;
+    color: grey;
+    font-size: 10px;
+    top: 35%;
+    left: 35%;
+}
+.rate{
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    display: flex;
+}
+.rate-num {
+    margin-right: -12px;
+    padding-left: 50px;
+}
+.ratings{
+    margin-left: 35px;
+    font-weight: 900;
+}
+.rate i{
+    font-size: 12px;
+}
+.rate p{
+    margin-bottom: -3px;
+}
+
+
+.fa-solid,
+.fa-regular{
+    color: #FCD34D;
+}
+
+footer {
+    margin: 0;
+    margin-top: 10px;
+    width: 340px;
+}
+
+.item,
+ .total-price,
+ .discount {
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    margin: 0;
+    font-size: 30px
+}
+.item-name{
+    margin-left: 0;
+    width: 150px;
+}
+.item p span{
+    color: grey;
+    font-size: 7px;
+}
+.my-items{
+    border-bottom: 1px solid #FCD34D;
+    padding-bottom: 10px;
+}
+.total-price{
+    padding-bottom: 20px;
+    font-weight: 600;
+}
+.discount p{
+    margin-left: 0;
+    font-style: italic;
+}
+
+footer h2{
+    text-align: center;
+}
+.hidden{
+    display: none;
+}
+button{
+    width: 340px;
+    height: 30px;
+    background-color: #16DB99;
+    color: aliceblue;
+    border: none;
+    border-radius: 2px;
+    padding-bottom: 5px;
+    font-weight: 500;
+}
+button:hover,
+i:hover,
+.item p span:hover{
+    cursor: pointer;
+}
+
+.modal-outer{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: rgba(95, 67, 51, 0.5);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.modal{
+   width: 300px;
+   border-radius: 3px;
+   margin: 100px auto;
+   padding: 20px;
+   background-color: aliceblue;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   text-align: center;
+   font-weight: bold;
+   align-items: center;
+   box-shadow: 0 0 60px rgb(45, 45, 45);
+   opacity: 1;
+}
+.modal input{
+    display: block;
+    font-size: 10px;
+    font-weight: 100;
+    border-radius: 3px;
+    border: 1px solid lightslategray;
+    width: 100%;
+    padding: 20px;
+    margin: 18px 0;
+}
+.modal p{
+    text-align: center;
+    margin: 0;
+}
+.pay {
+    font-size: 15px;
+    font-weight: 400;
+}
+.modal button{
+    width: 100%;
+}
+.success{
+    margin: 0;
+    box-sizing: border-box;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.success p{
+    color: #065F46;
+    font-size: 15px;
+    margin-top: 15px;
+    background-color: #ECFDF5;
+    width: 340px;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+.rate-modal-outer{
+    position: fixed;
+    left: 0%;
+    top: 0%;
+    background: rgba(95, 67, 51, 0);
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.rate:hover{
+    cursor: pointer;
+}
+.rate-modal{
+
+    position: relative;
+    width: 300px;
+    border-radius: 3px;
+    margin: 370px auto auto auto;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: beige;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    align-items: center;
+    box-shadow: 0 0 60px rgb(45, 45, 45);
+    color: #065F46;
+    opacity: 1;
+}
+h4{
+    font-size: 12px;
+    font-weight: 100;
+    
+}
+.star{
+    font-size: 25px;
+}
+.star:hover{
+    cursor: pointer;
+}
+.stars{
+    cursor: pointer;
+}
+  
